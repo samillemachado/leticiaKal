@@ -4,10 +4,12 @@ interface LayoutDefaultProps {
   component: React.FC;
 }
 
-const LayoutDefault: React.FC<LayoutDefaultProps> = ({ component }) => {
+const LayoutDefault: React.FC<LayoutDefaultProps> = ({
+  component: Component,
+}) => {
   return (
     <React.Fragment>
-      <h1>Growdev</h1>
+      <Component />
     </React.Fragment>
   );
 };
