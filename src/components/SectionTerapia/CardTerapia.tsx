@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 
@@ -17,6 +17,8 @@ interface BoxImageProps {
 }
 
 const SectionContentStyled = styled.div<DivProps>`
+  margin: 0;
+  padding: 0;
   width: 100vw;
   height: 400px;
   display: flex;
@@ -29,35 +31,27 @@ const SectionContentStyled = styled.div<DivProps>`
       : "row"}; //quando a invertADiv for true, mostra o row-reverse. Se não, mostra no posicionamento normal (ternário);
   div {
     width: 50vw;
-    padding: 0px 30px;
-  }
-  h2 {
-    padding-bottom: 20px;
-    font-family: "Nothing You Could Do", cursive;
-    font-size: 3em;
-  }
-  p {
-    line-height: 1.5em;
   }
 `;
 
 const BoxImageStyled = styled.div<BoxImageProps>`
-  width: 50vw;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${(props) => props.urlimagem});
 `;
 
-const CardWhatIs: React.FC<CardWhatIsProps> = ({ texto, imagem, reverse }) => {
+const CardTerapia: React.FC<CardWhatIsProps> = ({ texto, imagem, reverse }) => {
   return (
     <SectionContentStyled ordem={reverse}>
-      <div>
-        <p>{texto}</p>
-      </div>
+      <Box>
+        <Typography variant="h5" sx={{ padding: 5 }}>
+          {texto}
+        </Typography>
+      </Box>
       <BoxImageStyled urlimagem={imagem} />
     </SectionContentStyled>
   );
 };
 
-export default CardWhatIs;
+export default CardTerapia;

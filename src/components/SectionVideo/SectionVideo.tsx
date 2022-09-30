@@ -25,8 +25,8 @@ const SectionVideo: React.FC = () => {
         container
         spacing={2}
         sx={{
-          backgroundColor: defaultTheme.palette.primary.contrastText,
-          color: defaultTheme.palette.primary.main,
+          backgroundColor: defaultTheme.palette.secondary.light,
+          color: defaultTheme.palette.secondary.contrastText,
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",

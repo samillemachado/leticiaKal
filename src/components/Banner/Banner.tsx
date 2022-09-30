@@ -1,4 +1,4 @@
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import BannerLinks from "./BannerLinks";
 import BannerStyled from "./BannerStyled";
@@ -15,6 +15,7 @@ const Banner: React.FC = () => {
           justifyContent: "space-around",
         }}
       >
+        <BannerLinks nomeLink="APRESENTAÇÃO" />
         <BannerLinks nomeLink="O QUE É" />
         <BannerLinks nomeLink="COMO É" />
         <BannerLinks nomeLink="PERFIL" />

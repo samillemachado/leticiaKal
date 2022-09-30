@@ -5,9 +5,10 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Banner/Banner";
 import Profile from "../../components/Profile/Profile";
 import SectionConsulta from "../../components/SectionConsulta/SectionConsulta";
-import WhatIs from "../../components/WhatIs/WhatIs";
 import Logo from "../../components/Logo/Logo";
 import SectionVideo from "../../components/SectionVideo/SectionVideo";
+import SectionTerapia from "../../components/SectionTerapia/SectionTerapia";
+import SectionFeedback from "../../components/SectionFeedback/SectionFeedback";
 
 const Home: React.FC = () => {
   return (
@@ -15,9 +16,10 @@ const Home: React.FC = () => {
       <Logo />
       <Header />
       <SectionVideo />
-      <WhatIs />
+      <SectionTerapia />
       <SectionConsulta />
       <Profile />
+      <SectionFeedback />
       <Contact />
       <Footer />
     </Box>

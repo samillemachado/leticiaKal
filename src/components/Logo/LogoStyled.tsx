@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo3.png";
 
 const LogoStyled = styled.div`
   background-image: url(${logo});
@@ -7,7 +7,6 @@ const LogoStyled = styled.div`
   background-size: contain;
   background-position: center;
   width: 100vw;
-  height: 130px;
-  margin: 50px;
+  height: 230px;
 `;
 export default LogoStyled;

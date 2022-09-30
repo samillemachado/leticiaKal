@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
         container
         spacing={2}
         sx={{
-          backgroundColor: defaultTheme.palette.primary.main,
+          backgroundColor: defaultTheme.palette.primary.light,
           color: defaultTheme.palette.primary.contrastText,
           padding: 10,
         }}

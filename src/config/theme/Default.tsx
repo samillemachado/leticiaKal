@@ -4,16 +4,16 @@ const defaultTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      light: "#a5456b",
-      main: "#731440",
-      dark: "#43001a",
-      contrastText: "#ffff",
+      main: "#BF9341",
+      light: "#404040",
+      dark: "#0D0D0D",
+      contrastText: "#F2F2F2",
     },
     secondary: {
-      main: "#260417",
-      light: "#4f2c3d",
-      dark: "#000",
-      contrastText: "#ffff",
+      main: "#8C8181",
+      light: "#262626",
+      dark: "#0D0D0D",
+      contrastText: "#D9D9D9",
     },
   },
 });
