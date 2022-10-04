@@ -4,18 +4,15 @@ import styled from "styled-components";
 import defaultTheme from "../../config/theme/Default";
 import img from "../../assets/images/certificado.png";
 import TituloSecao from "../TituloSecao";
-import { Card } from "@mui/material";
-import { CardMedia } from "@mui/material";
 import { CardContent } from "@mui/material";
-import { CardActions } from "@mui/material";
 
 const ImgStyled = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 100vw;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 `;
 
 const SectionVideo: React.FC = () => {
@@ -31,6 +28,7 @@ const SectionVideo: React.FC = () => {
           justifyContent: "space-evenly",
           alignItems: "center",
           padding: 10,
+          margin: 0,
         }}
       >
         <Grid item xs={12} md={6}>
@@ -68,7 +66,7 @@ const SectionVideo: React.FC = () => {
           }}
         >
           <ImgStyled>
-            <Box />
+            <div />
           </ImgStyled>
           <TituloSecao titulo="Vamos conversar?" />
           <Typography variant="h6">

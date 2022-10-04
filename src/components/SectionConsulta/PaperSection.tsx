@@ -21,7 +21,8 @@ const PaperSection: React.FC<PaperSectionProps> = ({ text, icon }) => {
         item
         xs={12}
         sx={{
-          margin: 1,
+          margin: 0,
+          padding: 0,
         }}
       >
         <Paper
@@ -33,6 +34,9 @@ const PaperSection: React.FC<PaperSectionProps> = ({ text, icon }) => {
             color: defaultTheme.palette.primary.main,
             textAlign: "center",
             verticalAlign: "middle",
+            borderRadius: 5,
+            fontSize: 3,
+            margin: 0,
           }}
         >
           {React.createElement(icon, {
@@ -41,7 +45,11 @@ const PaperSection: React.FC<PaperSectionProps> = ({ text, icon }) => {
           })}
           <Typography
             variant="h6"
-            sx={{ color: defaultTheme.palette.primary.dark, marginTop: 1 }}
+            sx={{
+              color: defaultTheme.palette.primary.light,
+              marginTop: 2,
+              textTransform: "uppercase",
+            }}
           >
             {text}
           </Typography>

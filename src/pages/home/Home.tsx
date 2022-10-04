@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import Contact from "../../components/Contact";
+import Contact from "../../components/SectionContact/Contact";
 import Footer from "../../components/Footer";
 import Header from "../../components/Banner/Banner";
 import Profile from "../../components/Profile/Profile";
@@ -9,6 +9,7 @@ import Logo from "../../components/Logo/Logo";
 import SectionVideo from "../../components/SectionVideo/SectionVideo";
 import SectionTerapia from "../../components/SectionTerapia/SectionTerapia";
 import SectionFeedback from "../../components/SectionFeedback/SectionFeedback";
+import FloatingWhats from "../../components/FloatingWhats";
 
 const Home: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
       <SectionFeedback />
       <Contact />
       <Footer />
+      <FloatingWhats />
     </Box>
   );
 };

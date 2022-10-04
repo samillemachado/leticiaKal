@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import defaultTheme from "../../config/theme/Default";
 import styled from "styled-components";
 
 interface BannerLinksProps {

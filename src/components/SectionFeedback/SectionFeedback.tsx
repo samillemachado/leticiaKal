@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
-import TituloSecao from "../TituloSecao";
+import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import PaperFeedback from "./PaperFeedback";
 
@@ -21,7 +21,7 @@ const SectionFeedback: React.FC = () => {
             additionalTransfrom={0}
             arrows
             autoPlaySpeed={3000}
-            centerMode={false}
+            centerMode={true}
             className=""
             containerClass="container"
             dotListClass=""
@@ -68,19 +68,19 @@ const SectionFeedback: React.FC = () => {
             swipeable
           >
             <PaperFeedback
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              text="01 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
             />
             <PaperFeedback
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              text="02 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
             />
             <PaperFeedback
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              text="03 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
             />
             <PaperFeedback
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              text="04 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
             />
           </Carousel>

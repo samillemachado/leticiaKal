@@ -16,10 +16,18 @@ const SectionTerapia: React.FC = () => {
         sx={{
           backgroundColor: defaultTheme.palette.secondary.contrastText,
           color: defaultTheme.palette.secondary.dark,
-          padding: 5,
+          padding: 0,
+          margin: 0,
         }}
       >
-        <Grid item xs={12} sx={{ textAlign: "center" }}>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            textAlign: "center",
+            bgcolor: defaultTheme.palette.primary.main,
+          }}
+        >
           <TituloSecao titulo="O que é Terapia Sexual e como ela pode te ajudar?" />
         </Grid>
         <CardTerapia

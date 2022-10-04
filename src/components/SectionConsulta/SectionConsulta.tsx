@@ -19,17 +19,19 @@ const SectionConsulta: React.FC = () => {
         spacing={2}
         sx={{
           color: defaultTheme.palette.primary.main,
-          padding: 20,
+          paddingY: 20,
+          paddingX: 0,
+          margin: 0,
         }}
       >
         <Grid item xs={12} sx={{ textAlign: "center" }}>
           <TituloSecao titulo="O que a consulta inclui?" />
         </Grid>
 
-        <Grid item xs={12} md={4} sx={{ display: "flex" }}>
+        <Grid item xs={12} sx={{ display: "flex", textAlign: "center" }}>
           <PaperSection
             icon={(props) => <NoteAltOutlinedIcon />}
-            text="Avaliação"
+            text="Avaliação personalizada"
           />
           <PaperSection
             icon={(props) => <CalendarMonthOutlinedIcon />}
