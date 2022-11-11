@@ -7,7 +7,7 @@ const BannerStyled = styled.div`
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 500px;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;

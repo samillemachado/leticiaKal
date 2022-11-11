@@ -1,9 +1,20 @@
-import { Grid } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import PaperFeedback from "./PaperFeedback";
+import { styled } from "@mui/material/styles";
+
+const BoxComment = styled(Box)({
+  maxWidth: "100%",
+  maxHeight: "250px",
+  minWidth: "250px",
+  minHeight: "400px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+});
 
 const SectionFeedback: React.FC = () => {
   return (
@@ -21,7 +32,7 @@ const SectionFeedback: React.FC = () => {
             additionalTransfrom={0}
             arrows
             autoPlaySpeed={3000}
-            centerMode={true}
+            centerMode={false}
             className=""
             containerClass="container"
             dotListClass=""
@@ -67,22 +78,30 @@ const SectionFeedback: React.FC = () => {
             slidesToSlide={1}
             swipeable
           >
-            <PaperFeedback
-              text="01 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            <BoxComment>
+              <PaperFeedback
+                text="01 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
+              />
+            </BoxComment>
+            <BoxComment>
+              <PaperFeedback
+                text="02 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
+              />
+            </BoxComment>
+            <BoxComment>
+              <PaperFeedback
+                text="03 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
-            />
-            <PaperFeedback
-              text="02 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              />
+            </BoxComment>
+            <BoxComment>
+              <PaperFeedback
+                text="04 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
-            />
-            <PaperFeedback
-              text="03 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
-            />
-            <PaperFeedback
-              text="04 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            tempore repellat in deserunt blanditiis perspiciatis ipsa ipsam"
-            />
+              />
+            </BoxComment>
           </Carousel>
         </Grid>
       </Grid>

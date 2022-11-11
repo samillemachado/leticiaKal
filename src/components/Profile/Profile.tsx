@@ -1,7 +1,7 @@
 import { Avatar, Grid, Typography } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
-import perfil from "../../assets/images/perfil.png";
+import perfil from "../../assets/images/perfilPb.png";
 import TituloSecao from "../TituloSecao";
 
 const Profile: React.FC = () => {
@@ -14,6 +14,7 @@ const Profile: React.FC = () => {
           backgroundColor: defaultTheme.palette.primary.main,
           color: defaultTheme.palette.primary.contrastText,
           padding: 20,
+          margin: 0,
           display: "flex",
           justifyContent: "space-around",
         }}
@@ -21,7 +22,7 @@ const Profile: React.FC = () => {
         <Grid item xs={12} sm={6}>
           <Avatar
             alt="Leticia"
-            src="../../assets/images/perfi.png"
+            src={`${perfil}`}
             sx={{ width: 300, height: 300 }}
           />
         </Grid>

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import Contact from "../../components/SectionContact/Contact";
 import Footer from "../../components/Footer";
@@ -10,21 +10,23 @@ import SectionVideo from "../../components/SectionVideo/SectionVideo";
 import SectionTerapia from "../../components/SectionTerapia/SectionTerapia";
 import SectionFeedback from "../../components/SectionFeedback/SectionFeedback";
 import FloatingWhats from "../../components/FloatingWhats";
+import Section2 from "../../components/SectionConsulta/SectionConsulta";
 
 const Home: React.FC = () => {
   return (
-    <Box sx={{ margin: 0, padding: 0 }}>
+    <Grid container sx={{ margin: 0, padding: 0 }}>
       <Logo />
       <Header />
       <SectionVideo />
       <SectionTerapia />
-      <SectionConsulta />
+      {/* <SectionConsulta /> */}
+      <Section2 />
       <Profile />
       <SectionFeedback />
       <Contact />
       <Footer />
       <FloatingWhats />
-    </Box>
+    </Grid>
   );
 };
 

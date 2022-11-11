@@ -1,12 +1,22 @@
-import { Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import BannerLinks from "./BannerLinks";
 import BannerStyled from "./BannerStyled";
 
 const Banner: React.FC = () => {
+  const links: string[] = [
+    "APRESENTAÇÃO",
+    "O QUE É",
+    "COMO É",
+    "PERFIL",
+    "CONTATO",
+  ];
+
   return (
     <BannerStyled>
-      <Box
+      <Grid
+        container
+        xs={12}
         sx={{
           position: "static",
           top: 10,
@@ -15,12 +25,10 @@ const Banner: React.FC = () => {
           justifyContent: "space-around",
         }}
       >
-        <BannerLinks nomeLink="APRESENTAÇÃO" />
-        <BannerLinks nomeLink="O QUE É" />
-        <BannerLinks nomeLink="COMO É" />
-        <BannerLinks nomeLink="PERFIL" />
-        <BannerLinks nomeLink="CONTATO" />
-      </Box>
+        {links.map((item, index) => {
+          return <BannerLinks key={index} nomeLink={item} />;
+        })}
+      </Grid>
     </BannerStyled>
   );
 };

@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography, Box } from "@mui/material";
+import { Grid, Paper, styled, Typography } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
 
@@ -16,46 +16,34 @@ interface PaperSectionProps {
 
 const PaperSection: React.FC<PaperSectionProps> = ({ text, icon }) => {
   return (
-    <>
-      <Grid
-        item
-        xs={12}
+    <Paper
+      elevation={3}
+      sx={{
+        padding: 3,
+        color: defaultTheme.palette.primary.contrastText,
+        textAlign: "center",
+        verticalAlign: "middle",
+        borderRadius: 2,
+        fontSize: 2,
+        margin: 0,
+        width: 180,
+      }}
+    >
+      {React.createElement(icon, {
+        width: 40,
+        height: 40,
+      })}
+      <Typography
+        variant="body1"
         sx={{
-          margin: 0,
-          padding: 0,
+          color: defaultTheme.palette.primary.light,
+          marginTop: 2,
+          textTransform: "uppercase",
         }}
       >
-        <Paper
-          elevation={3}
-          sx={{
-            minWidth: 150,
-            minHeight: 150,
-            padding: 5,
-            color: defaultTheme.palette.primary.main,
-            textAlign: "center",
-            verticalAlign: "middle",
-            borderRadius: 5,
-            fontSize: 3,
-            margin: 0,
-          }}
-        >
-          {React.createElement(icon, {
-            width: 40,
-            height: 40,
-          })}
-          <Typography
-            variant="h6"
-            sx={{
-              color: defaultTheme.palette.primary.light,
-              marginTop: 2,
-              textTransform: "uppercase",
-            }}
-          >
-            {text}
-          </Typography>
-        </Paper>
-      </Grid>
-    </>
+        {text}
+      </Typography>
+    </Paper>
   );
 };
 

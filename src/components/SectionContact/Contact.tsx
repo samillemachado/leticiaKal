@@ -24,14 +24,10 @@ const Contact: React.FC = () => {
         <Grid item xs={12} sx={{ textAlign: "center" }}>
           <Typography
             variant="h6"
-            sx={{ color: defaultTheme.palette.primary.dark, marginTop: 1 }}
+            sx={{ color: defaultTheme.palette.primary.main, marginTop: 1 }}
           >
             Me envia a tua dúvida, eu quero te ajudar!
           </Typography>
-        </Grid>
-
-        <Grid item xs={12} sx={{ textAlign: "center" }}>
-          <Maps property="aqui vai o mapa"></Maps>
         </Grid>
         <Grid
           item
@@ -43,9 +39,7 @@ const Contact: React.FC = () => {
           }}
         >
           <Grid item xs={12} md={4}>
-            <Typography>
-              End: Rua Lava Pés 451 | Centro | Passo Fundo-RS
-            </Typography>
+            <Typography>Passo Fundo | RS</Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box>

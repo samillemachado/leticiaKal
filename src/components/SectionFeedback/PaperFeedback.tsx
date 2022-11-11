@@ -1,6 +1,6 @@
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
-import { Grid, Paper, Typography, Box } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 
 interface PaperFeedbackProps {
   text: string;
@@ -9,36 +9,35 @@ interface PaperFeedbackProps {
 const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
   return (
     <>
-      <Grid
-        item
-        xs={12}
+      <Paper
+        elevation={3}
         sx={{
-          margin: 1,
+          minWidth: "35%",
+          minHeight: 200,
+          maxWidth: 300,
+          maxHeight: 250,
+          backgroundColor: defaultTheme.palette.primary.contrastText,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          paddingLeft: "30px",
+          paddingRight: "30px",
+          flexDirection: "column",
         }}
       >
-        <Paper
-          elevation={3}
+        <Typography variant="h4">"</Typography>
+        <Typography
+          variant="body1"
           sx={{
-            maxWidth: 300,
-            minWidth: 200,
-            minHeight: 150,
-            padding: 5,
-            color: defaultTheme.palette.primary.main,
+            color: defaultTheme.palette.primary.light,
+            marginTop: 1,
             textAlign: "center",
-            alignItems: "center",
-            borderRadius: 20,
           }}
         >
-          <Typography variant="h4">"</Typography>
-          <Typography
-            variant="body1"
-            sx={{ color: defaultTheme.palette.primary.dark, marginTop: 1 }}
-          >
-            {text}
-          </Typography>
-          <Typography variant="h4">"</Typography>
-        </Paper>
-      </Grid>
+          {text}
+        </Typography>
+        <Typography variant="h4">"</Typography>
+      </Paper>
     </>
   );
 };
