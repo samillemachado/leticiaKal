@@ -4,13 +4,12 @@ import Contact from "../../components/SectionContact/Contact";
 import Footer from "../../components/Footer";
 import Header from "../../components/Banner/Banner";
 import Profile from "../../components/Profile/Profile";
-import SectionConsulta from "../../components/SectionConsulta/SectionConsulta";
 import Logo from "../../components/Logo/Logo";
 import SectionVideo from "../../components/SectionVideo/SectionVideo";
 import SectionTerapia from "../../components/SectionTerapia/SectionTerapia";
 import SectionFeedback from "../../components/SectionFeedback/SectionFeedback";
 import FloatingWhats from "../../components/FloatingWhats";
-import Section2 from "../../components/SectionConsulta/SectionConsulta";
+import SectionConsulta from "../../components/SectionConsulta/SectionConsulta";
 
 const Home: React.FC = () => {
   return (
@@ -19,8 +18,7 @@ const Home: React.FC = () => {
       <Header />
       <SectionVideo />
       <SectionTerapia />
-      {/* <SectionConsulta /> */}
-      <Section2 />
+      <SectionConsulta />
       <Profile />
       <SectionFeedback />
       <Contact />

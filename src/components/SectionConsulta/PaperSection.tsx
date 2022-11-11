@@ -25,8 +25,10 @@ const PaperSection: React.FC<PaperSectionProps> = ({ text, icon }) => {
         verticalAlign: "middle",
         borderRadius: 2,
         fontSize: 2,
-        margin: 0,
+        margin: 3,
         width: 180,
+        flexGrow: 1,
+        minHeight: 100,
       }}
     >
       {React.createElement(icon, {

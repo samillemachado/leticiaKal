@@ -19,14 +19,33 @@ const Profile: React.FC = () => {
           justifyContent: "space-around",
         }}
       >
-        <Grid item xs={12} sm={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Avatar
-            alt="Leticia"
+            alt="foto-Leticia"
             src={`${perfil}`}
             sx={{ width: 300, height: 300 }}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            flexDirection: "column",
+          }}
+        >
           <TituloSecao titulo="QUEM SOU EU?" />
           <Typography variant="h6" sx={{ marginTop: 10 }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,

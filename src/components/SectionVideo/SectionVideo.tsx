@@ -32,7 +32,7 @@ const SectionVideo: React.FC = () => {
         }}
       >
         <Grid item xs={12} md={6}>
-          <CardContent>
+          {/* <CardContent>
             <iframe
               id="video"
               width="560"
@@ -42,7 +42,7 @@ const SectionVideo: React.FC = () => {
               allow="accelerometer, autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-          </CardContent>
+          </CardContent> */}
           {/* <div>
             <iframe
               width="560"
