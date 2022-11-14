@@ -6,8 +6,8 @@ import BannerStyled from "./BannerStyled";
 const Banner: React.FC = () => {
   const links: string[] = [
     "APRESENTAÇÃO",
-    "O QUE É",
-    "COMO É",
+    "TERAPIA",
+    "CONSULTA",
     "PERFIL",
     "CONTATO",
   ];
@@ -25,8 +25,8 @@ const Banner: React.FC = () => {
           justifyContent: "space-around",
         }}
       >
-        {links.map((item, index) => {
-          return <BannerLinks key={index} nomeLink={item} />;
+        {links.map((link, index) => {
+          return <BannerLinks key={index} nomeLink={link} />;
         })}
       </Grid>
     </BannerStyled>

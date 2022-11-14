@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 interface CardWhatIsProps {
+  titulo: string;
   texto: string;
   imagem: string;
   reverse?: boolean;
@@ -42,11 +43,19 @@ const BoxImageStyled = styled.div<BoxImageProps>`
   background-image: url(${(props) => props.urlimagem});
 `;
 
-const CardTerapia: React.FC<CardWhatIsProps> = ({ texto, imagem, reverse }) => {
+const CardTerapia: React.FC<CardWhatIsProps> = ({
+  titulo,
+  texto,
+  imagem,
+  reverse,
+}) => {
   return (
     <SectionContentStyled ordem={reverse}>
       <Box>
-        <Typography variant="h5" sx={{ padding: 5 }}>
+        <Typography variant="h4" sx={{ paddingX: 6, fontWeight: 600 }}>
+          {titulo}
+        </Typography>
+        <Typography variant="h5" sx={{ padding: 6 }}>
           {texto}
         </Typography>
       </Box>

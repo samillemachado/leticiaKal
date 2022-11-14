@@ -8,6 +8,7 @@ const Profile: React.FC = () => {
   return (
     <>
       <Grid
+        id="section-profile"
         container
         spacing={2}
         sx={{

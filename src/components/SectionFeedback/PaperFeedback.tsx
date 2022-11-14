@@ -18,25 +18,33 @@ const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
           maxHeight: 250,
           backgroundColor: defaultTheme.palette.primary.contrastText,
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
           paddingLeft: "30px",
           paddingRight: "30px",
           flexDirection: "column",
         }}
       >
-        <Typography variant="h4">"</Typography>
+        <Typography
+          variant="h1"
+          sx={{
+            color: defaultTheme.palette.primary.light,
+            marginY: 1,
+            textAlign: "center",
+            fontWeight: 600,
+          }}
+        >
+          "
+        </Typography>
         <Typography
           variant="body1"
           sx={{
             color: defaultTheme.palette.primary.light,
-            marginTop: 1,
+            marginY: 1,
             textAlign: "center",
           }}
         >
           {text}
         </Typography>
-        <Typography variant="h4">"</Typography>
       </Paper>
     </>
   );

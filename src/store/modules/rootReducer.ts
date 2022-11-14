@@ -1,8 +1,6 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import toDos from "./toDos/toDos";
-import toDo from "./toDos/toDo";
+import gridId from "./gridId";
 
 export default combineReducers({
-  toDos,
-  toDo,
+  gridId,
 });

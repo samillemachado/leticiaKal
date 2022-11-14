@@ -7,7 +7,7 @@ const SectionConsultaStyled = styled.div`
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;

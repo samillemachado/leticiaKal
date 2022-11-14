@@ -20,7 +20,7 @@ const GridStyled = styled(Grid)({
 
 const Section2: React.FC = () => {
   return (
-    <SectionConsultaStyled>
+    <SectionConsultaStyled id="section-consulta">
       <Grid container sx={{ display: "flex", justifyContent: "center" }}>
         <Grid item xs={12} md={12} xl={12} sx={{ textAlign: "center" }}>
           <TituloSecao titulo="O que a consulta inclui?" />

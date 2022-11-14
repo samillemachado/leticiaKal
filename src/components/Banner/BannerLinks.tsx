@@ -1,6 +1,7 @@
 import { Button, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
 interface BannerLinksProps {
   nomeLink: string;
@@ -23,14 +24,19 @@ const LinkStyled = styled.div`
   }
 `;
 
-const scrollTo = () => {
-  const section = document.getElementById(
-    "section-apresentacao"
-  ) as HTMLElement;
-  section.scrollIntoView({ block: "center" });
-};
-
 const BannerLinks: React.FC<BannerLinksProps> = ({ nomeLink }) => {
+  const [gridId, setGridId] = useState<string>("");
+
+  const dispatch = useAppDispatch();
+  const gridIdRedux = useAppSelector((state) => state.gridId);
+
+  const scrollTo = () => {
+    const section = document.getElementById(
+      "section-apresentacao"
+    ) as HTMLElement;
+    section.scrollIntoView({ block: "center" });
+  };
+
   return (
     <Button variant="text" onClick={scrollTo}>
       <LinkStyled>
