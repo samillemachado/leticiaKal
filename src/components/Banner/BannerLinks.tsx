@@ -23,9 +23,16 @@ const LinkStyled = styled.div`
   }
 `;
 
+const scrollTo = () => {
+  const section = document.getElementById(
+    "section-apresentacao"
+  ) as HTMLElement;
+  section.scrollIntoView({ block: "center" });
+};
+
 const BannerLinks: React.FC<BannerLinksProps> = ({ nomeLink }) => {
   return (
-    <Button variant="text">
+    <Button variant="text" onClick={scrollTo}>
       <LinkStyled>
         <Typography
           variant="h6"

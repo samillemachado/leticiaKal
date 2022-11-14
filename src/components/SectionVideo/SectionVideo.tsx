@@ -1,10 +1,9 @@
-import { Grid, Typography, Box } from "@mui/material";
-import React from "react";
+import { Grid, Typography } from "@mui/material";
+import React, { useState } from "react";
 import styled from "styled-components";
 import defaultTheme from "../../config/theme/Default";
 import img from "../../assets/images/certificado.png";
 import TituloSecao from "../TituloSecao";
-import { CardContent } from "@mui/material";
 
 const ImgStyled = styled.div`
   background-image: url(${img});
@@ -16,9 +15,12 @@ const ImgStyled = styled.div`
 `;
 
 const SectionVideo: React.FC = () => {
+  const [gridId, setGridId] = useState<string>("");
+
   return (
     <>
       <Grid
+        id="section-apresentacao"
         container
         spacing={2}
         sx={{
