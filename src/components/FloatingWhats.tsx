@@ -6,7 +6,7 @@ const FloatingWhats: React.FC = () => {
   return (
     <React.Fragment>
       <Fab color="secondary" aria-label="add">
-        <BsWhatsapp />
+        <BsWhatsapp fontSize={25} />
       </Fab>
     </React.Fragment>
   );

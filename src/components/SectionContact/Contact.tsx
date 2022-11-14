@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <Grid
-        id="section-contato"
+        id="section-contact"
         container
         spacing={2}
         sx={{
