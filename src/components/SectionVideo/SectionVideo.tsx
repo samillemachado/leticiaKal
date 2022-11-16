@@ -57,7 +57,7 @@ const SectionVideo: React.FC = () => {
             desde o início de certos comportamentos.
           </Typography>
           <Typography variant="h6">
-            Vem conhecer meu instagram e me envia uma mensagem!
+            Vem conhecer meu Instagram ou me envia uma mensagem no Whatsapp!
           </Typography>
         </Grid>
       </Grid>

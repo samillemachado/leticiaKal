@@ -58,10 +58,34 @@ const Banner: React.FC = () => {
           top: 10,
           width: "100vw",
           display: "flex",
-          justifyContent: "space-around",
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+            xl: "row",
+          },
+          justifyContent: {
+            xs: "center",
+            sm: "center",
+            md: "space-around",
+            lg: "space-around",
+            xl: "space-around",
+          },
+          alignItems: {
+            xs: "space-around",
+            sm: "space-around",
+            md: "center",
+            lg: "center",
+            xl: "center",
+          },
         }}
       >
-        <Button variant="text" onClick={scrollToApresentacao}>
+        <Button
+          variant="text"
+          sx={{ width: 200 }}
+          onClick={scrollToApresentacao}
+        >
           <LinkStyled>
             <Typography
               variant="h6"
@@ -75,7 +99,7 @@ const Banner: React.FC = () => {
             </Typography>
           </LinkStyled>
         </Button>
-        <Button variant="text" onClick={scrollToTerapia}>
+        <Button variant="text" sx={{ width: 200 }} onClick={scrollToTerapia}>
           <LinkStyled>
             <Typography
               variant="h6"
@@ -89,7 +113,7 @@ const Banner: React.FC = () => {
             </Typography>
           </LinkStyled>
         </Button>
-        <Button variant="text" onClick={scrollToConsulta}>
+        <Button variant="text" sx={{ width: 200 }} onClick={scrollToConsulta}>
           <LinkStyled>
             <Typography
               variant="h6"
@@ -103,7 +127,7 @@ const Banner: React.FC = () => {
             </Typography>
           </LinkStyled>
         </Button>
-        <Button variant="text" onClick={scrollToProfile}>
+        <Button variant="text" sx={{ width: 200 }} onClick={scrollToProfile}>
           <LinkStyled>
             <Typography
               variant="h6"
@@ -117,7 +141,7 @@ const Banner: React.FC = () => {
             </Typography>
           </LinkStyled>
         </Button>
-        <Button variant="text" onClick={scrollToContact}>
+        <Button variant="text" sx={{ width: 200 }} onClick={scrollToContact}>
           <LinkStyled>
             <Typography
               variant="h6"
