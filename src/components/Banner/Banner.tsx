@@ -88,7 +88,7 @@ const Banner: React.FC = () => {
         >
           <LinkStyled>
             <Typography
-              variant="h6"
+              variant="h5"
               component="div"
               sx={{
                 flexGrow: 1,
@@ -102,7 +102,7 @@ const Banner: React.FC = () => {
         <Button variant="text" sx={{ width: 200 }} onClick={scrollToTerapia}>
           <LinkStyled>
             <Typography
-              variant="h6"
+              variant="h5"
               component="div"
               sx={{
                 flexGrow: 1,
@@ -116,7 +116,7 @@ const Banner: React.FC = () => {
         <Button variant="text" sx={{ width: 200 }} onClick={scrollToConsulta}>
           <LinkStyled>
             <Typography
-              variant="h6"
+              variant="h5"
               component="div"
               sx={{
                 flexGrow: 1,
@@ -130,7 +130,7 @@ const Banner: React.FC = () => {
         <Button variant="text" sx={{ width: 200 }} onClick={scrollToProfile}>
           <LinkStyled>
             <Typography
-              variant="h6"
+              variant="h5"
               component="div"
               sx={{
                 flexGrow: 1,
@@ -144,7 +144,7 @@ const Banner: React.FC = () => {
         <Button variant="text" sx={{ width: 200 }} onClick={scrollToContact}>
           <LinkStyled>
             <Typography
-              variant="h6"
+              variant="h5"
               component="div"
               sx={{
                 flexGrow: 1,

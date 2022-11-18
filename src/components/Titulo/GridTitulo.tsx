@@ -8,12 +8,12 @@ interface GridTituloPros {
 }
 
 const GridTituloStyled = styled(Grid)({
-  maxWidth: "100%",
+  minWidth: "100%",
   minHeight: "25%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: defaultTheme.palette.secondary.contrastText,
+  backgroundColor: defaultTheme.palette.primary.main,
 });
 
 const GridTitulo: React.FC<GridTituloPros> = ({ component }) => {

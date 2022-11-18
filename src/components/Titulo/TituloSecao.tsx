@@ -9,15 +9,17 @@ interface TituloSecaoProps {
 const TituloSecao: React.FC<TituloSecaoProps> = ({ titulo }) => {
   return (
     <Typography
-      variant="h3"
+      variant="h4"
       sx={{
         marginY: 5,
         textTransform: "uppercase",
-        color: defaultTheme.palette.primary.main,
-        paddin: 5,
+        textAlign: "center",
+        color: defaultTheme.palette.primary.contrastText,
+        fontWeight: 300,
+        paddingX: 10,
       }}
     >
-      <strong>{titulo}</strong>
+      {titulo}
     </Typography>
   );
 };
