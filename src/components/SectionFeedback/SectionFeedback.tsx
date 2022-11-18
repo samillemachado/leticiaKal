@@ -24,7 +24,7 @@ const SectionFeedback: React.FC = () => {
         spacing={2}
         sx={{
           color: defaultTheme.palette.primary.main,
-          padding: 20,
+          paddingX: { xs: 5, md: 10, lg: 20, xg: 30 },
         }}
       >
         <Grid item xs={12} md={12} xl={12}>

@@ -1,6 +1,6 @@
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
-import { Paper, Typography } from "@mui/material";
+import { Paper, Typography, Grid } from "@mui/material";
 
 interface PaperFeedbackProps {
   text: string;
@@ -8,7 +8,7 @@ interface PaperFeedbackProps {
 
 const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
   return (
-    <>
+    <Grid item xs={12}>
       <Paper
         elevation={3}
         sx={{
@@ -19,8 +19,7 @@ const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
           backgroundColor: defaultTheme.palette.primary.contrastText,
           display: "flex",
           alignItems: "center",
-          paddingLeft: "30px",
-          paddingRight: "30px",
+          paddingX: { xs: 5, md: 10, lg: 20, xg: 30 },
           flexDirection: "column",
         }}
       >
@@ -46,7 +45,7 @@ const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
           {text}
         </Typography>
       </Paper>
-    </>
+    </Grid>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Grid, Paper, styled, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
 

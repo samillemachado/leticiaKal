@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Typography, Grid, Box } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 
@@ -17,11 +17,12 @@ interface BoxImageProps {
   urlimagem: string;
 }
 
-const SectionContentStyled = styled.div<DivProps>`
+const CardStyledH = styled.div<DivProps>`
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   width: 100vw;
-  height: 400px;
+  max-height: 400px;
   display: flex;
   align-items: center;
   color: ${(props) => props.theme.color};
@@ -36,7 +37,27 @@ const SectionContentStyled = styled.div<DivProps>`
 `;
 
 const BoxImageStyled = styled.div<BoxImageProps>`
-  height: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(${(props) => props.urlimagem});
+`;
+
+// VERTICAL --------------------------------------------
+
+const CardStyledV = styled.div<DivProps>`
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  color: ${(props) => props.theme.color};
+  div {
+    width: 50vh;
+  }
+`;
+
+const BoxImageStyledV = styled.div<BoxImageProps>`
+  height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,17 +71,54 @@ const CardTerapia: React.FC<CardWhatIsProps> = ({
   reverse,
 }) => {
   return (
-    <SectionContentStyled ordem={reverse}>
-      <Box>
-        <Typography variant="h4" sx={{ paddingX: 6, fontWeight: 600 }}>
-          {titulo}
-        </Typography>
-        <Typography variant="h5" sx={{ padding: 6 }}>
-          {texto}
-        </Typography>
-      </Box>
-      <BoxImageStyled urlimagem={imagem} />
-    </SectionContentStyled>
+    <>
+      <Grid item sx={{ display: { xs: "none", sm: "block" } }}>
+        <CardStyledH ordem={reverse}>
+          <Box>
+            <Typography
+              variant="h3"
+              sx={{
+                padding: 6,
+                fontWeight: 600,
+              }}
+            >
+              {titulo}
+            </Typography>
+            <Typography variant="h5" sx={{ padding: 6 }}>
+              {texto}
+            </Typography>{" "}
+          </Box>
+          <BoxImageStyled urlimagem={imagem} />
+        </CardStyledH>
+      </Grid>
+      <Grid item sx={{ display: { xs: "block", sm: "none" } }}>
+        <CardStyledV>
+          <BoxImageStyledV urlimagem={imagem}>
+            <Grid
+              item
+              sx={{
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                variant="h3"
+                sx={{
+                  fontWeight: 600,
+                }}
+              >
+                {titulo}
+              </Typography>
+            </Grid>
+          </BoxImageStyledV>
+          <Typography variant="h5" sx={{ padding: 6 }}>
+            {texto}
+          </Typography>{" "}
+        </CardStyledV>
+      </Grid>
+    </>
   );
 };
 

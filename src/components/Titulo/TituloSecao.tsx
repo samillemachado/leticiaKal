@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import defaultTheme from "../config/theme/Default";
+import defaultTheme from "../../config/theme/Default";
 
 interface TituloSecaoProps {
   titulo: string;

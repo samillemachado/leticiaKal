@@ -7,10 +7,11 @@ const BannerStyled = styled.div`
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 75vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
+  overflow-x: hidden;
 `;
 export default BannerStyled;

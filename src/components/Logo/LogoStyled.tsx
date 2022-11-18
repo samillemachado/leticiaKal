@@ -7,7 +7,7 @@ const LogoStyled = styled.div`
   background-size: contain;
   background-position: center;
   width: 100vw;
-  height: 25vh;
+  min-height: 25vh;
   margin: 0;
   padding: 0;
 `;

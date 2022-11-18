@@ -1,7 +1,7 @@
 import { Grid, styled } from "@mui/material";
 import React from "react";
 import PaperSection from "./PaperSection";
-import TituloSecao from "../TituloSecao";
+import TituloSecao from "../Titulo/TituloSecao";
 import NoteAltOutlinedIcon from "@mui/icons-material/NoteAltOutlined";
 import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";

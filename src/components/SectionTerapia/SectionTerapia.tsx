@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import defaultTheme from "../../config/theme/Default";
-import TituloSecao from "../TituloSecao";
+import TituloSecao from "../Titulo/TituloSecao";
 import img1 from "../../assets/images/img1-pb.jpg";
 import img2 from "../../assets/images/img2-pb.jpg";
 import img3 from "../../assets/images/img3-pb.jpg";
@@ -9,14 +9,11 @@ import img4 from "../../assets/images/img5-pb.jpg";
 import CardTerapia from "./CardTerapia";
 
 const SectionTerapia: React.FC = () => {
-  const [sectionId, setSectionId] = useState<string>("");
-
   return (
     <React.Fragment>
       <Grid
         id="section-terapia"
         container
-        spacing={2}
         sx={{
           backgroundColor: defaultTheme.palette.secondary.contrastText,
           color: defaultTheme.palette.primary.main,
@@ -29,13 +26,14 @@ const SectionTerapia: React.FC = () => {
           xs={12}
           sx={{
             textAlign: "center",
-            color: defaultTheme.palette.secondary.contrastText,
+            color: defaultTheme.palette.secondary.dark,
             bgcolor: defaultTheme.palette.primary.main,
             padding: 0,
             margin: 0,
           }}
         >
-          <TituloSecao titulo="O que é Terapia Sexual e como ela pode te ajudar?" />
+          <TituloSecao titulo="Terapia Sexual:" />
+          <TituloSecao titulo="O que é? como ela pode te ajudar?" />
         </Grid>
         <CardTerapia
           titulo="TODOS"

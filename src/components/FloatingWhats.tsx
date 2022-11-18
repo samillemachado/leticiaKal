@@ -4,11 +4,16 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const FloatingWhats: React.FC = () => {
   return (
-    <React.Fragment>
-      <Fab color="secondary" aria-label="add">
-        <BsWhatsapp fontSize={25} />
+    <>
+      <Fab
+        color="secondary"
+        aria-label="add"
+        size="large"
+        sx={{ position: "fixed", left: "2em", bottom: "2em" }}
+      >
+        <BsWhatsapp fontSize={30} />
       </Fab>
-    </React.Fragment>
+    </>
   );
 };
 

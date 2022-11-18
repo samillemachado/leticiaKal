@@ -10,10 +10,10 @@ const defaultTheme = createTheme({
       contrastText: "#F2F2F2",
     },
     secondary: {
-      main: "#8C8181",
+      main: "#075e54",
       light: "#262626",
       dark: "#0D0D0D",
-      contrastText: "#D9D9D9",
+      contrastText: "#ffffff",
     },
   },
   breakpoints: {
