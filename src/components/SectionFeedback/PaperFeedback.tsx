@@ -8,7 +8,11 @@ interface PaperFeedbackProps {
 
 const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
   return (
-    <Grid item xs={12}>
+    <Grid
+      item
+      xs={12}
+      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+    >
       <Paper
         elevation={3}
         sx={{
@@ -18,13 +22,15 @@ const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
           maxHeight: 250,
           backgroundColor: defaultTheme.palette.primary.contrastText,
           display: "flex",
+          justifyContent: "center",
           alignItems: "center",
-          paddingX: { xs: 5, md: 10, lg: 20, xg: 30 },
+          paddingX: { xs: 5, md: 10, lg: 20, xg: 25 },
+          paddingY: { xs: 2, md: 5, lg: 10, xg: 15 },
           flexDirection: "column",
         }}
       >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{
             color: defaultTheme.palette.primary.light,
             marginY: 1,

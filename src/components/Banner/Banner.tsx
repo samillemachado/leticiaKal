@@ -73,8 +73,8 @@ const Banner: React.FC = () => {
             xl: "space-around",
           },
           alignItems: {
-            xs: "space-around",
-            sm: "space-around",
+            xs: "center",
+            sm: "center",
             md: "center",
             lg: "center",
             xl: "center",

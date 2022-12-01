@@ -9,7 +9,7 @@ interface GridTituloPros {
 
 const GridTituloStyled = styled(Grid)({
   minWidth: "100%",
-  minHeight: "25%",
+  minHeight: "20%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",

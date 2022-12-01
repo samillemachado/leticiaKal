@@ -12,5 +12,7 @@ const SectionConsultaStyled = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 `;
 export default SectionConsultaStyled;

@@ -11,12 +11,11 @@ const TituloSecao: React.FC<TituloSecaoProps> = ({ titulo }) => {
     <Typography
       variant="h4"
       sx={{
-        marginY: 5,
         textTransform: "uppercase",
         textAlign: "center",
         color: defaultTheme.palette.primary.contrastText,
         fontWeight: 300,
-        paddingX: 10,
+        paddingX: 5,
       }}
     >
       {titulo}

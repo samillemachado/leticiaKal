@@ -73,7 +73,6 @@ const SectionFeedback: React.FC = () => {
             rewindWithAnimation={false}
             rtl={false}
             shouldResetAutoplay
-            showDots
             sliderClass=""
             slidesToSlide={1}
             swipeable
