@@ -13,6 +13,7 @@ const Contact: React.FC = () => {
         container
         spacing={2}
         sx={{
+          minHeight: "80vh",
           backgroundColor: defaultTheme.palette.primary.light,
           color: defaultTheme.palette.primary.contrastText,
           padding: { xs: 2, sm: 5, md: 10, lg: 15, xl: 20 },
@@ -101,11 +102,15 @@ const Contact: React.FC = () => {
             flexDirection: "column",
           }}
         >
-          <Typography variant="h6">Letícia Kal</Typography>
-          <Typography variant="h6" sx={{ paddingY: 1 }}>
+          <Typography variant="h6" sx={{ fontWeight: 300 }}>
+            Letícia Kal
+          </Typography>
+          <Typography variant="h6" sx={{ paddingY: 1, fontWeight: 300 }}>
             Passo Fundo | RS
           </Typography>
-          <Typography variant="h6">Telefone: (55) 9907-9498</Typography>
+          <Typography variant="h6" sx={{ fontWeight: 300 }}>
+            Telefone: (55) 99907-9498
+          </Typography>
         </Grid>
       </Grid>
     </>

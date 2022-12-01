@@ -26,9 +26,11 @@ const SectionApresentacao: React.FC = () => {
         container
         spacing={2}
         sx={{
+          minHeight: "80%",
           backgroundColor: defaultTheme.palette.primary.contrastText,
           color: defaultTheme.palette.primary.light,
-          padding: { xs: 2, sm: 5, md: 5, lg: 10, xl: 20 },
+          paddingX: { xs: 2, sm: 5, md: 5, lg: 10, xl: 20 },
+          paddingY: { xs: 2, sm: 5, md: 5, lg: 5, xl: 10 },
           margin: 0,
           display: "flex",
           justifyContent: "space-around",

@@ -8,7 +8,7 @@ const FooterStyled = styled.div`
   background-size: contain;
   background-position: center;
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
   margin: 0;
   padding: 0;
 `;
