@@ -19,6 +19,7 @@ const SectionTerapia: React.FC = () => {
           color: defaultTheme.palette.primary.main,
           padding: 0,
           margin: 0,
+          overflowX: "hidden",
         }}
       >
         <Grid

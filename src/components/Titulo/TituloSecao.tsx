@@ -15,7 +15,7 @@ const TituloSecao: React.FC<TituloSecaoProps> = ({ titulo }) => {
         textAlign: "center",
         color: defaultTheme.palette.primary.contrastText,
         fontWeight: 300,
-        paddingX: 5,
+        padding: 5,
       }}
     >
       {titulo}
