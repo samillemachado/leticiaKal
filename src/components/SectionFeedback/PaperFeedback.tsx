@@ -25,7 +25,7 @@ const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
           justifyContent: "center",
           alignItems: "center",
           paddingX: { xs: 5, md: 10, lg: 20, xg: 25 },
-          paddingY: { xs: 2, md: 5, lg: 10, xg: 15 },
+          paddingY: { xs: 2, md: 5, lg: 5, xg: 10 },
           flexDirection: "column",
         }}
       >

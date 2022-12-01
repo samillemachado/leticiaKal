@@ -2,10 +2,10 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import img from "../../assets/images/certificado.png";
 import defaultTheme from "../../config/theme/Default";
-import perfil from "../../assets/images/perfilPb.png";
 import TituloSecao from "../Titulo/TituloSecao";
 import styled from "styled-components";
 import GridTitulo from "../Titulo/GridTitulo";
+import ReactPlayer from "react-player";
 
 const ImgStyled = styled.div`
   background-image: url(${img});
@@ -14,17 +14,15 @@ const ImgStyled = styled.div`
   background-position: center;
   width: 150px;
   height: 150px;
-  padding-left: 10px;
+  margin: 10px;
 `;
 
 const SectionApresentacao: React.FC = () => {
   return (
-    <>
+    <Grid container id="section-apresentação">
       <GridTitulo component={<TituloSecao titulo="Vamos conversar?" />} />
       <Grid
-        id="section-apresentacao"
-        container
-        spacing={2}
+        item
         sx={{
           minHeight: "80%",
           backgroundColor: defaultTheme.palette.primary.contrastText,
@@ -41,9 +39,10 @@ const SectionApresentacao: React.FC = () => {
           xs={12}
           sm={12}
           md={12}
-          lg={8}
-          xl={8}
+          lg={12}
+          xl={12}
           sx={{
+            width: "100%",
             margin: 0,
             padding: 0,
             display: "flex",
@@ -75,20 +74,21 @@ const SectionApresentacao: React.FC = () => {
             xs={12}
             sm={12}
             md={12}
-            lg={8}
-            xl={8}
+            lg={6}
+            xl={6}
             sx={{
+              width: "100%",
               margin: 0,
               padding: 0,
               display: "flex",
               justifyContent: "center",
-              alignItems: "flex-start",
+              alignItems: "center",
               flexDirection: "column",
             }}
           >
             <Typography
               variant="h5"
-              sx={{ paddingBottom: 5, textAlign: "center" }}
+              sx={{ paddingBottom: 5, textAlign: "center", fontWeight: "600" }}
             >
               SERÁ QUE TEU CASO TEM SOLUÇÃO?{" "}
             </Typography>
@@ -103,13 +103,36 @@ const SectionApresentacao: React.FC = () => {
             <Typography variant="h6">
               Vem conhecer meu Instagram ou me envia uma mensagem no Whatsapp!
             </Typography>
+            <ImgStyled>
+              <div />
+            </ImgStyled>
           </Grid>
-          <ImgStyled>
-            <div />
-          </ImgStyled>
+
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={6}
+            sx={{
+              width: "100%",
+              margin: 0,
+              padding: 0,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=kFXWqweZAvM"
+              width="80%"
+            />
+          </Grid>
         </Grid>
       </Grid>
-    </>
+    </Grid>
   );
 };
 
