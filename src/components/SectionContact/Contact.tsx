@@ -76,18 +76,7 @@ const Contact: React.FC = () => {
                   </div>
                 </IconContext.Provider>
               </IconButton>
-              <IconButton
-                color="primary"
-                aria-label="upload picture"
-                component="label"
-              >
-                <input hidden accept="image/*" type="file" />
-                <IconContext.Provider value={{ size: "2em" }}>
-                  <div>
-                    <BsWhatsapp />
-                  </div>
-                </IconContext.Provider>
-              </IconButton>
+
               <IconButton
                 color="primary"
                 aria-label="upload picture"
@@ -97,6 +86,19 @@ const Contact: React.FC = () => {
                 <IconContext.Provider value={{ size: "2em" }}>
                   <div>
                     <BsYoutube />
+                  </div>
+                </IconContext.Provider>
+              </IconButton>
+
+              <IconButton
+                color="primary"
+                aria-label="upload picture"
+                component="label"
+              >
+                <input hidden accept="image/*" type="file" />
+                <IconContext.Provider value={{ size: "2em" }}>
+                  <div>
+                    <BsWhatsapp />
                   </div>
                 </IconContext.Provider>
               </IconButton>
