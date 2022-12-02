@@ -24,9 +24,10 @@ const PaperFeedback: React.FC<PaperFeedbackProps> = ({ text }) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          paddingX: { xs: 5, md: 10, lg: 20, xg: 25 },
+          paddingX: { xs: 5, md: 10, lg: 15, xg: 20 },
           paddingY: { xs: 2, md: 5, lg: 5, xg: 10 },
           flexDirection: "column",
+          borderRadius: 10,
         }}
       >
         <Typography

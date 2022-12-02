@@ -2,14 +2,14 @@ import { Grid, Typography, Box, IconButton } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
 import TituloSecao from "../Titulo/TituloSecao";
-import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { BsInstagram, BsWhatsapp, BsYoutube } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
 const Contact: React.FC = () => {
   return (
     <>
       <Grid
-        id="section-profile"
+        id="section-contact"
         container
         spacing={2}
         sx={{
@@ -85,6 +85,18 @@ const Contact: React.FC = () => {
                 <IconContext.Provider value={{ size: "2em" }}>
                   <div>
                     <BsWhatsapp />
+                  </div>
+                </IconContext.Provider>
+              </IconButton>
+              <IconButton
+                color="primary"
+                aria-label="upload picture"
+                component="label"
+              >
+                <input hidden accept="image/*" type="file" />
+                <IconContext.Provider value={{ size: "2em" }}>
+                  <div>
+                    <BsYoutube />
                   </div>
                 </IconContext.Provider>
               </IconButton>

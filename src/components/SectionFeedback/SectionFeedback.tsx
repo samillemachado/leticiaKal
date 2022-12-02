@@ -1,4 +1,4 @@
-import { Grid, Box } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 import React from "react";
 import defaultTheme from "../../config/theme/Default";
 import "react-multi-carousel/lib/styles.css";
@@ -24,9 +24,30 @@ const SectionFeedback: React.FC = () => {
         spacing={2}
         sx={{
           color: defaultTheme.palette.primary.main,
-          paddingX: { xs: 5, md: 10, lg: 20, xg: 30 },
+          paddingX: { xs: 5, md: 10, lg: 20, xl: 30 },
+          paddingY: { xs: 5, md: 5, lg: 5, xl: 5 },
         }}
       >
+        <Grid
+          item
+          xs={12}
+          md={12}
+          xl={12}
+          sx={{ textAlign: "center", padding: 0, marging: 0 }}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              textTransform: "uppercase",
+              textAlign: "center",
+              color: defaultTheme.palette.primary.dark,
+              fontWeight: 300,
+              padding: 5,
+            }}
+          >
+            RESULTADOS
+          </Typography>
+        </Grid>
         <Grid item xs={12} md={12} xl={12}>
           <Carousel
             additionalTransfrom={0}

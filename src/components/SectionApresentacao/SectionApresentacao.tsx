@@ -19,7 +19,7 @@ const ImgStyled = styled.div`
 
 const SectionApresentacao: React.FC = () => {
   return (
-    <Grid container id="section-apresentação">
+    <Grid container id="section-apresentacao">
       <GridTitulo component={<TituloSecao titulo="Vamos conversar?" />} />
       <Grid
         item
@@ -28,7 +28,7 @@ const SectionApresentacao: React.FC = () => {
           backgroundColor: defaultTheme.palette.primary.contrastText,
           color: defaultTheme.palette.primary.light,
           paddingX: { xs: 2, sm: 5, md: 5, lg: 10, xl: 20 },
-          paddingY: { xs: 2, sm: 5, md: 5, lg: 5, xl: 10 },
+          paddingY: { xs: 5, sm: 5, md: 5, lg: 5, xl: 10 },
           margin: 0,
           display: "flex",
           justifyContent: "space-around",
